@@ -272,3 +272,46 @@ body {
 	flex-direction: column;
 	gap: 16px;
 }
+
+/* Table */
+.table__wrapper {
+	overflow: auto;
+}
+.table {
+	border-collapse: collapse;
+}
+.table__head {
+	font-size: 16px;
+	color: var(--color-mid-grey);
+	padding: 12px 16px;
+}
+.table__cell {
+	color: var(--color-base-white);
+	padding: 12px 16px;
+}
+.table__row:not(:last-child) {
+	border-bottom: 1px solid var(--color-base-white);
+}
+.cash__cell {
+	padding: 24px 16px;
+}
+
+.table__total {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	overflow: auto;
+}
+.table__total-text {
+	font-size: 24px;
+	font-weight: 700;
+	padding: 12px 16px;
+	color: var(--color-base-white);
+}
+.table__total-value {
+	font-size: 24px;
+	font-weight: 700;
+	padding: 12px 16px;
+	border-top: 1px solid var(--color-base-white);
+	text-align: right;
+	color: var(--color-base-white);
+}
