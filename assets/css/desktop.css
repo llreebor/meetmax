@@ -56,7 +56,27 @@ body {
 	}
 }
 
-/* ========================= Pages ==================================== */
+.timer {
+	padding: 8px 16px;
+	border-radius: 29px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 14px;
+	border: 2px solid var(--color-light-blue);
+}
+.time {
+	font-size: 54px;
+	color: var(--color-light-blue);
+	@media (width <= 1300px) {
+		font-size: 42px;
+	}
+	@media (width <= 992px) {
+		font-size: 32px;
+	}
+}
+
+/* ========================= Styles ==================================== */
 /* Central Title Page */
 .main__page {
 	margin: 32px;
@@ -136,25 +156,7 @@ body {
 	grid-template-columns: repeat(3, 1fr);
 	place-items: start;
 }
-.timer {
-	padding: 8px 16px;
-	border-radius: 29px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 14px;
-	border: 2px solid var(--color-light-blue);
-}
-.time {
-	font-size: 54px;
-	color: var(--color-light-blue);
-	@media (width <= 1300px) {
-		font-size: 42px;
-	}
-	@media (width <= 992px) {
-		font-size: 32px;
-	}
-}
+
 .header__title {
 	font-size: 67px;
 	color: var(--color-light-blue);
