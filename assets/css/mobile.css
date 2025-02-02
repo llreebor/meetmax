@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Amiko", serif;
+}
+
+:root {
+  --color-bg: #252525;
+  --color-mid-grey: #999;
+  --color-base-white: #ececec;
+  --color-light-blue: #83bcff;
+  --color-bad-red: #900b09;
+
+  --gradient-blue: linear-gradient(0deg, #003b78 0%, #003b78 100%);
+  --gradient-red: linear-gradient(0deg, #006227 0%, #006227 100%);
+}
