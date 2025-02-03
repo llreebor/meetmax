@@ -39,6 +39,12 @@ body {
 	align-items: center;
 	text-align: center;
 	text-decoration: none;
+	border: none;
+}
+.btn.disabled {
+	background: var(--color-base-white-80);
+	color: var(--color-mid-grey);
+	box-shadow: none;
 }
 .btn__warning {
 	box-shadow: 0px 4px 4px 0px #fff inset,
@@ -154,6 +160,15 @@ body {
 	font-size: 24px;
 	font-weight: 700;
 	color: var(--color-base-white);
+}
+.input {
+	display: flex;
+	width: 100%;
+	flex-grow: 1;
+	border: 1px solid var(--color-mid-grey);
+	background: var(--color-base-white);
+	padding: 0 10px;
+	font-size: 24px;
 }
 
 /* ========================= Styles ==================================== */
@@ -317,4 +332,79 @@ body {
 	border-top: 1px solid var(--color-base-white);
 	text-align: right;
 	color: var(--color-base-white);
+}
+
+/* Offer Form */
+.offer__form {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.offer__item {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 16px;
+	border-radius: 16px;
+	border: 1px solid var(--color-mid-grey);
+	background: var(--color-base-white-80);
+	align-items: center;
+}
+.offer__text {
+	display: flex;
+	flex-shrink: 0;
+}
+
+.offer__right {
+	display: flex;
+	justify-content: end;
+	text-align: right;
+}
+
+.switch {
+	display: inline-flex;
+	align-items: center;
+	position: relative;
+	width: 147px;
+	height: 38px;
+	background: var(--color-mid-grey);
+	border-radius: 50px;
+}
+
+.switch input {
+	display: none;
+}
+
+.switch-label {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	cursor: pointer;
+	font-size: 24px;
+	color: #333;
+}
+
+.switch-label span {
+	flex: 1;
+	text-align: center;
+	line-height: 40px;
+	z-index: 2;
+}
+
+.switch-slider {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	background: white;
+	border-radius: 20px;
+	top: 0%;
+	left: 0%;
+	box-shadow: 0px 4px 4px 0px #fff inset,
+		0px -4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+
+	transition: 0.3s;
+}
+
+.switch input:checked + .switch-label .switch-slider {
+	left: 50%;
 }

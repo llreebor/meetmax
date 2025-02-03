@@ -14,7 +14,7 @@
 	--color-bad-red: #900b09;
 	--color-base-white-80: rgba(236, 236, 236, 0.8);
 	--gradient-blue: linear-gradient(0deg, #003b78 0%, #003b78 100%);
-	--gradient-red: linear-gradient(0deg, #006227 0%, #006227 100%);
+	--gradient-green: linear-gradient(0deg, #006227 0%, #006227 100%);
 }
 
 /* Globa Styles */
@@ -55,7 +55,6 @@ body {
 		}
 	}
 }
-
 .timer {
 	padding: 8px 16px;
 	border-radius: 29px;
@@ -156,7 +155,6 @@ body {
 	grid-template-columns: repeat(3, 1fr);
 	place-items: start;
 }
-
 .header__title {
 	font-size: 67px;
 	color: var(--color-light-blue);
