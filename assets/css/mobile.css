@@ -14,6 +14,10 @@
 	--color-base-white-80: rgba(236, 236, 236, 0.8);
 	--gradient-blue: linear-gradient(0deg, #003b78 0%, #003b78 100%);
 	--gradient-green: linear-gradient(0deg, #006227 0%, #006227 100%);
+
+	--color-circle-red: #d95f5f;
+	--color-circle-blue: #669bec;
+	--color-circle-green: #4aa842;
 }
 
 /* Globa Styles */
@@ -79,6 +83,7 @@ body {
 }
 .text-transparrent {
 	color: var(--color-base-white-80) !important;
+	font-weight: 400 !important;
 }
 
 /* Reusable Styles */
@@ -102,6 +107,21 @@ body {
 		font-size: 16px;
 		color: var(--color-primary);
 	}
+}
+.circle-blue {
+	background: var(--color-circle-blue);
+}
+.circle-green {
+	background: var(--color-circle-green);
+}
+.circle-red {
+	background: var(--color-circle-red);
+}
+.list__circle {
+	width: 21px;
+	height: 21px;
+	border-radius: 100%;
+	border: 2px solid var(--color-base-white);
 }
 .price__icon {
 	width: 20px;
@@ -163,12 +183,14 @@ body {
 }
 .input {
 	display: flex;
+	justify-content: flex-end;
 	width: 100%;
 	flex-grow: 1;
 	border: 1px solid var(--color-mid-grey);
 	background: var(--color-base-white);
 	padding: 0 10px;
 	font-size: 24px;
+	text-align: right;
 }
 
 /* ========================= Styles ==================================== */
@@ -206,6 +228,8 @@ body {
 }
 .offer__text {
 	font-size: 24px;
+	display: flex;
+	gap: 8px;
 	color: var(--color-primary);
 }
 
@@ -224,6 +248,7 @@ body {
 	font-size: 24px;
 	color: var(--color-base-white);
 	display: -webkit-box;
+	font-weight: 700;
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 1;
 }

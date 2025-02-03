@@ -15,6 +15,10 @@
 	--color-base-white-80: rgba(236, 236, 236, 0.8);
 	--gradient-blue: linear-gradient(0deg, #003b78 0%, #003b78 100%);
 	--gradient-green: linear-gradient(0deg, #006227 0%, #006227 100%);
+
+	--color-circle-red: #d95f5f;
+	--color-circle-blue: #669bec;
+	--color-circle-green: #4aa842;
 }
 
 /* Globa Styles */
@@ -31,7 +35,7 @@ body {
 	list-style: none;
 	display: flex;
 	flex-direction: column;
-	gap: 24px;
+	gap: 18px;
 	@media (width <= 1300px) {
 		gap: 16px;
 	}
@@ -41,14 +45,14 @@ body {
 	background: var(--color-base-white-80);
 	border-radius: 32px;
 	border: 3px solid var(--color-mid-grey);
-	padding: 14px 18px;
+	padding: 10px 14px;
 	gap: 12px;
 	align-items: center;
 	@media (width <= 1300px) {
 		padding: 8px 12px;
 	}
 	p {
-		font-size: 32px;
+		font-size: 26px;
 		color: var(--color-primary);
 		@media (width <= 1300px) {
 			font-size: 20px;
@@ -65,16 +69,28 @@ body {
 	border: 2px solid var(--color-light-blue);
 }
 .time {
-	font-size: 54px;
+	font-size: 42px;
 	color: var(--color-light-blue);
-	@media (width <= 1300px) {
-		font-size: 42px;
-	}
+
 	@media (width <= 992px) {
 		font-size: 32px;
 	}
 }
-
+.circle-blue {
+	background: var(--color-circle-blue);
+}
+.circle-green {
+	background: var(--color-circle-green);
+}
+.circle-red {
+	background: var(--color-circle-red);
+}
+.list__circle {
+	width: 32px;
+	height: 32px;
+	border-radius: 100%;
+	border: 3px solid var(--color-base-white);
+}
 /* ========================= Styles ==================================== */
 /* Central Title Page */
 .main__page {
@@ -95,15 +111,13 @@ body {
 	justify-content: flex-end;
 }
 .meetmax__logo img {
+	width: 80%;
 	@media (width <= 1300px) {
-		width: 80%;
 		margin-left: auto;
 	}
 }
 .desco__logo img {
-	@media (width <= 1300px) {
-		width: 80%;
-	}
+	width: 80%;
 }
 .main__page-body {
 	display: flex;
@@ -156,7 +170,7 @@ body {
 	place-items: start;
 }
 .header__title {
-	font-size: 67px;
+	font-size: 54px;
 	color: var(--color-light-blue);
 	flex: 1 1 100%;
 	text-align: center;
@@ -186,7 +200,7 @@ body {
 	gap: 4px;
 }
 .qr__small-image {
-	width: 155px;
+	width: 135px;
 	@media (width <= 1300px) {
 		width: 125px;
 	}
@@ -233,7 +247,7 @@ body {
 	}
 }
 .inner__subtitle {
-	font-size: 35px;
+	font-size: 30px;
 	font-weight: 700;
 	@media (width <= 1300px) {
 		font-size: 28px;
@@ -244,7 +258,7 @@ body {
 }
 .inner__footer {
 	padding: 10px;
-	font-size: 42px;
+	font-size: 38px;
 	color: var(--color-primary);
 	font-weight: 700;
 	display: flex;
