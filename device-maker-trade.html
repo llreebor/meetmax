@@ -75,10 +75,7 @@
 							<div class="offer__item">
 								<p class="offer__text">Share price</p>
 								<div class="offer__right">
-									<p class="input">
-										$
-										<span>90</span>
-									</p>
+									<input class="input" name="price" id="price" />
 								</div>
 							</div>
 							<div class="offer__item">
@@ -93,5 +90,12 @@
 				</div>
 			</div>
 		</main>
+
+		<script>
+			document.getElementById("price").addEventListener("input", function (e) {
+				let value = e.target.value.replace(/[^0-9.]/g, "")
+				e.target.value = "$" + value
+			})
+		</script>
 	</body>
 </html>
