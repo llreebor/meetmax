@@ -39,6 +39,9 @@ body {
 	@media (width <= 1450px) {
 		gap: 16px;
 	}
+	@media (height <= 900px) {
+		gap: 16px;
+	}
 }
 .list__item {
 	display: flex;
@@ -51,10 +54,16 @@ body {
 	@media (width <= 1450px) {
 		padding: 8px 12px;
 	}
+	@media (height <= 900px) {
+		padding: 8px 12px;
+	}
 	p {
 		font-size: 26px;
 		color: var(--color-primary);
 		@media (width <= 1450px) {
+			font-size: 20px;
+		}
+		@media (height <= 900px) {
 			font-size: 20px;
 		}
 	}
@@ -73,6 +82,9 @@ body {
 	color: var(--color-light-blue);
 
 	@media (width <= 992px) {
+		font-size: 32px;
+	}
+	@media (height <=900px) {
 		font-size: 32px;
 	}
 }
@@ -115,6 +127,9 @@ body {
 	@media (width <= 1450px) {
 		margin-left: auto;
 	}
+	@media (height <= 900px) {
+		margin-left: auto;
+	}
 }
 .desco__logo img {
 	width: 80%;
@@ -128,6 +143,9 @@ body {
 }
 .merket__logo {
 	@media (width <= 1450px) {
+		width: 300px;
+	}
+	@media (height <= 900px) {
 		width: 300px;
 	}
 }
@@ -147,12 +165,18 @@ body {
 	@media (width <= 1450px) {
 		width: 300px;
 	}
+	@media (height <= 900px) {
+		width: 300px;
+	}
 }
 .qr__text {
 	font-size: 36px;
 	line-height: normal;
 	font-weight: 700;
 	@media (width <= 1450px) {
+		font-size: 32px;
+	}
+	@media (height <= 900px) {
 		font-size: 32px;
 	}
 }
@@ -176,6 +200,9 @@ body {
 	text-align: center;
 	justify-self: center;
 	@media (width <= 1450px) {
+		font-size: 48px;
+	}
+	@media (height <= 900px) {
 		font-size: 48px;
 	}
 	@media (width <= 992px) {
@@ -207,6 +234,9 @@ body {
 	@media (width <= 992px) {
 		width: 100px;
 	}
+	@media (height <= 900px) {
+		width: 125px;
+	}
 }
 .qr__small-text {
 	font-size: 28px;
@@ -234,6 +264,9 @@ body {
 	@media (width <= 1450px) {
 		gap: 24px;
 	}
+	@media (height <= 900px) {
+		gap: 24px;
+	}
 }
 .inner__item {
 	padding: 24px;
@@ -250,6 +283,9 @@ body {
 	font-size: 30px;
 	font-weight: 700;
 	@media (width <= 1450px) {
+		font-size: 28px;
+	}
+	@media (height <= 900px) {
 		font-size: 28px;
 	}
 	@media (width <= 992px) {
@@ -270,6 +306,9 @@ body {
 	@media (width <= 1450px) {
 		font-size: 32px;
 	}
+	@media (height <= 900px) {
+		font-size: 32px;
+	}
 	@media (width <= 992px) {
 		font-size: 24px;
 	}
@@ -285,6 +324,9 @@ body {
 		height: auto;
 	}
 	@media (width <= 1450px) {
+		width: 20px;
+	}
+	@media (height <= 900px) {
 		width: 20px;
 	}
 }
