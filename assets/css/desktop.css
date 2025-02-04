@@ -36,7 +36,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 18px;
-	@media (width <= 1300px) {
+	@media (width <= 1450px) {
 		gap: 16px;
 	}
 }
@@ -48,13 +48,13 @@ body {
 	padding: 10px 14px;
 	gap: 12px;
 	align-items: center;
-	@media (width <= 1300px) {
+	@media (width <= 1450px) {
 		padding: 8px 12px;
 	}
 	p {
 		font-size: 26px;
 		color: var(--color-primary);
-		@media (width <= 1300px) {
+		@media (width <= 1450px) {
 			font-size: 20px;
 		}
 	}
@@ -112,7 +112,7 @@ body {
 }
 .meetmax__logo img {
 	width: 80%;
-	@media (width <= 1300px) {
+	@media (width <= 1450px) {
 		margin-left: auto;
 	}
 }
@@ -127,7 +127,7 @@ body {
 	margin-top: 24px;
 }
 .merket__logo {
-	@media (width <= 1300px) {
+	@media (width <= 1450px) {
 		width: 300px;
 	}
 }
@@ -144,7 +144,7 @@ body {
 	text-decoration: none;
 }
 .qr__img {
-	@media (width <= 1300px) {
+	@media (width <= 1450px) {
 		width: 300px;
 	}
 }
@@ -152,7 +152,7 @@ body {
 	font-size: 36px;
 	line-height: normal;
 	font-weight: 700;
-	@media (width <= 1300px) {
+	@media (width <= 1450px) {
 		font-size: 32px;
 	}
 }
@@ -175,7 +175,7 @@ body {
 	flex: 1 1 100%;
 	text-align: center;
 	justify-self: center;
-	@media (width <= 1300px) {
+	@media (width <= 1450px) {
 		font-size: 48px;
 	}
 	@media (width <= 992px) {
@@ -201,7 +201,7 @@ body {
 }
 .qr__small-image {
 	width: 135px;
-	@media (width <= 1300px) {
+	@media (width <= 1450px) {
 		width: 125px;
 	}
 	@media (width <= 992px) {
@@ -231,7 +231,7 @@ body {
 	gap: 72px;
 	margin: 0 auto;
 	margin-top: 24px;
-	@media (width <= 1300px) {
+	@media (width <= 1450px) {
 		gap: 24px;
 	}
 }
@@ -249,7 +249,7 @@ body {
 .inner__subtitle {
 	font-size: 30px;
 	font-weight: 700;
-	@media (width <= 1300px) {
+	@media (width <= 1450px) {
 		font-size: 28px;
 	}
 	@media (width <= 992px) {
@@ -267,7 +267,7 @@ body {
 	background: var(--color-base-white);
 	margin: 0 -24px;
 	margin-top: auto;
-	@media (width <= 1300px) {
+	@media (width <= 1450px) {
 		font-size: 32px;
 	}
 	@media (width <= 992px) {
@@ -284,7 +284,7 @@ body {
 		width: 100%;
 		height: auto;
 	}
-	@media (width <= 1300px) {
+	@media (width <= 1450px) {
 		width: 20px;
 	}
 }
