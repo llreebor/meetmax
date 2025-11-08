@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>MeetMax</title>
+		<!-- Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="./assets/css/mobile.css" />
+	</head>
+	<body>
+		<main>
+			<div class="wrapper">
+				<!-- Actions Bar -->
+				<div class="actions">
+					<a href="#" class="action__btn">
+						<img src="./assets/images/info-icon.svg" alt="icon" />
+					</a>
+					<div class="timer">
+						<img src="./assets/images/clock.svg" alt="clock icon" />
+						<p class="time">13:20</p>
+					</div>
+					<a href="#" class="action__btn">
+						<img src="./assets/images/members-icon.svg" alt="icon" />
+					</a>
+				</div>
+
+				<!-- Content -->
+				<div class="content">
+					<a href="#" class="btn text-sm">< Back</a>
+					<div class="content__item bg-green">
+						<h2 class="content__subtitle">Set Offer</h2>
+
+						<form action="#" class="offer__form">
+							<div class="offer__item">
+								<p class="offer__text">Trade</p>
+								<div class="offer__right">
+									<label class="switch">
+										<input type="checkbox" id="toggleSwitch" />
+										<div class="switch-label">
+											<span>Sell</span>
+											<span>Buy</span>
+											<div class="switch-slider"></div>
+										</div>
+									</label>
+								</div>
+							</div>
+							<div class="offer__item">
+								<p class="offer__text">Stock</p>
+								<div class="offer__right">
+									<select name="stock" id="stock" class="input">
+										<option value="apple">Apple</option>
+										<option value="apple">Microsoft</option>
+									</select>
+								</div>
+							</div>
+							<div class="offer__item">
+								<p class="offer__text">Quantity</p>
+								<div class="offer__right">
+									<input
+										type="text"
+										class="input"
+										name="quantity"
+										id="quantity"
+									/>
+								</div>
+							</div>
+							<div class="offer__item">
+								<p class="offer__text">Share price</p>
+								<div class="offer__right">
+									<input class="input" name="price" id="price" />
+								</div>
+							</div>
+							<div class="offer__item">
+								<p class="offer__text">Total value</p>
+								<p class="offer__text offer__right">$450</p>
+							</div>
+						</form>
+					</div>
+					<a href="#" class="btn">MAKE OFFER</a>
+					<!-- .disabled class if it's will be a link and disabled attribut if its will be a button -->
+					<a href="#" class="btn disabled" disabled="true">MAKE OFFER</a>
+				</div>
+			</div>
+		</main>
+
+		<script>
+			document.getElementById("price").addEventListener("input", function (e) {
+				let value = e.target.value.replace(/[^0-9.]/g, "")
+				e.target.value = "$" + value
+			})
+		</script>
+	</body>
+</html>
