@@ -1,67 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>MeetMax</title>
-		<!-- Font -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap"
-			rel="stylesheet"
-		/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeetMax</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-		<!-- Styles -->
-		<link rel="stylesheet" href="./assets/css/mobile.css" />
-	</head>
-	<body>
-		<main>
-			<div class="wrapper">
-				<!-- Actions Bar -->
-				<div class="actions">
-					<a href="#" class="action__btn">
-						<img src="./assets/images/info-icon.svg" alt="icon" />
-					</a>
-					<div class="timer">
-						<img src="./assets/images/clock.svg" alt="clock icon" />
-						<p class="time">13:20</p>
-					</div>
-					<a href="#" class="action__btn">
-						<img src="./assets/images/members-icon.svg" alt="icon" />
-					</a>
-				</div>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/mobile.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="wrapper">
+        <!-- Back Button -->
+        <header class="header">
+          <div class="time">
+            <img src="./assets/images/clockicon.svg" alt="clockicon" />
+            <p>12:34</p>
+          </div>
 
-				<!-- Content -->
-				<div class="content">
-					<a href="#" class="btn text-sm">< Back</a>
+          <div class="balance">
+            <p class="balance__total">$1,277,000</p>
+            <p class="balance__cash">
+              <!-- text-green by default -->
+              Cash <span class="text-red">(-$2600)</span>
+            </p>
+          </div>
 
-					<div class="content__item">
-						<h2 class="content__subtitle">Market News</h2>
+          <button class="burger__btn">
+            <img src="./assets/images/menu-open.svg" alt="menu open button" />
+          </button>
+        </header>
 
-						<ul class="news__list">
-							<li>
-								<a href="#!" class="news__link">Apple announces new product</a>
-							</li>
-							<li>
-								<a href="#!" class="news__link">
-									Tesco forecasts year end traffic
-								</a>
-							</li>
-							<li>
-								<a href="#!" class="news__link text-transparrent">
-									New survey on technology buying habits
-								</a>
-							</li>
-							<li>
-								<a href="#!" class="news__link text-transparrent">
-									US imposes punitive tariff on bananas
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</main>
-	</body>
+        <!-- Content -->
+        <div class="news overflow-hidden pb-200">
+          <div class="section__title">Latest News</div>
+
+          <ul class="list news__list">
+            <li class="list__item news__list-item">
+              <a href="#" class="news__link">
+                <p class="news__text line-clamp-2">
+                  <span></span>
+                  Pear Struggles as uPhone 35 Sales Decline, Hopes Pinned on
+                  Pear Struggles as uPhone 35 Sales Decline, Hopes Pinned on
+                </p>
+                <p class="news__tag">100 RC</p>
+              </a>
+            </li>
+            <li class="list__item news__list-item">
+              <a href="#" class="news__link inactive">
+                <p class="news__text line-clamp-2">
+                  <span></span>
+                  Pear Struggles as uPhone 35 Sales Decline, Hopes Pinned on
+                  Pear Struggles as uPhone 35 Sales Decline, Hopes Pinned on
+                </p>
+              </a>
+            </li>
+            <li class="list__item news__list-item">
+              <a href="#" class="news__link">
+                <p class="news__text line-clamp-2">
+                  <span></span>
+                  Pear Struggles as uPhone 35 Sales Decline, Hopes Pinned on
+                  Pear Struggles as uPhone 35 Sales Decline, Hopes Pinned on
+                </p>
+                <p class="news__tag">25$</p>
+              </a>
+            </li>
+            <li class="list__item news__list-item">
+              <a href="#" class="news__link">
+                <p class="news__text line-clamp-2">
+                  <span></span>
+                  Pear Struggles as uPhone 35 Sales Decline, Hopes Pinned on
+                  Pear Struggles as uPhone 35 Sales Decline, Hopes Pinned on
+                </p>
+                <p class="news__tag">100 RC</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer Nav -->
+        <div class="footer__nav">
+          <a href="#" class="btn btn-primary footer__nav-btn">Trade</a>
+
+          <nav class="nav">
+            <a href="#" class="nav__item">
+              <div class="nav__item-inner">
+                <img
+                  class="nav__icon"
+                  src="./assets/images/nav-market.svg"
+                  alt="nav icon"
+                />
+                <p class="nav__text">Market</p>
+              </div>
+            </a>
+            <a href="#" class="nav__item">
+              <div class="nav__item-inner">
+                <img
+                  class="nav__icon"
+                  src="./assets/images/nav-portfolio.svg"
+                  alt="nav icon"
+                />
+                <p class="nav__text">Portfolio</p>
+              </div>
+            </a>
+            <a href="#" class="nav__item active">
+              <div class="nav__item-inner">
+                <img
+                  class="nav__icon"
+                  src="./assets/images/nav-news.svg"
+                  alt="nav icon"
+                />
+                <p class="nav__text">News</p>
+                <div class="nav__notification with-red-circle">
+                  <span>3</span>
+                </div>
+              </div>
+            </a>
+          </nav>
+        </div>
+
+        <!--
+            Mobile menu:
+            - For opening: JS adds 'open' to .mobile__menu-wrapper and 'menu-open' to body.
+            - Trigger: <button class="burger__btn">☰</button> (add outside the menu, handle click in JS).
+            - Closing: click on .mobile__menu-close or .mobile__overlay.
+        -->
+        <div class="mobile__menu-wrapper">
+          <div class="mobile__menu">
+            <ul class="mobile__menu-list">
+              <li class="mobile__menu-list--item">
+                <button class="mobile__menu-close">
+                  <img
+                    src="./assets/images/menu-close.svg"
+                    alt="close menu icon"
+                  />
+                </button>
+              </li>
+              <li class="mobile__menu-list--item">
+                <a href="#" class="mobile__menu-link">Team</a>
+              </li>
+              <li class="mobile__menu-list--item">
+                <a href="#" class="mobile__menu-link">How to play</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile__overlay"></div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
