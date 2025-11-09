@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeetMax</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/mobile.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="wrapper">
+        <!-- Back Button -->
+        <header class="header">
+          <div class="time">
+            <img src="./assets/images/clockicon.svg" alt="clockicon" />
+            <p>12:34</p>
+          </div>
+
+          <div class="balance">
+            <p class="balance__total">$1,277,000</p>
+            <p class="balance__cash">Cash <span>$60</span></p>
+          </div>
+
+          <button class="burger__btn">
+            <img src="./assets/images/menu-open.svg" alt="menu open button" />
+          </button>
+        </header>
+        <!-- Content -->
+        <div class="price">
+          <div class="section__title">Current Prices</div>
+          <ul class="list price__list">
+            <li class="list__item price__item">
+              <div class="price__logo">
+                <img src="./assets/images/apple.svg" alt="logo" />
+              </div>
+              <p class="list__text price__name">Apple</p>
+              <p class="list__text price__value">$113</p>
+              <div class="price__icon">
+                <img
+                  src="./assets/images/red-arrow.svg"
+                  alt="red arrow image"
+                />
+              </div>
+            </li>
+            <li class="list__item price__item">
+              <div class="price__logo">
+                <img src="./assets/images/microsoft.svg" alt="logo" />
+              </div>
+              <p class="list__text price__name">Microsoft</p>
+              <p class="list__text price__value">$113</p>
+              <div class="price__icon">
+                <img
+                  src="./assets/images/green-arrow.svg"
+                  alt="red arrow image"
+                />
+              </div>
+            </li>
+            <li class="list__item price__item">
+              <div class="price__logo">
+                <img src="./assets/images/asda.svg" alt="logo" />
+              </div>
+              <p class="list__text price__name">ASDA</p>
+              <p class="list__text price__value">$113</p>
+              <div class="price__icon">
+                <img
+                  src="./assets/images/red-arrow.svg"
+                  alt="red arrow image"
+                />
+              </div>
+            </li>
+            <li class="list__item price__item">
+              <div class="price__logo">
+                <img src="./assets/images/ibm.svg" alt="logo" />
+              </div>
+              <p class="list__text price__name">IBM</p>
+              <p class="list__text price__value">$113</p>
+              <div class="price__icon">
+                <img
+                  src="./assets/images/green-arrow.svg"
+                  alt="red arrow image"
+                />
+              </div>
+            </li>
+            <li class="list__item price__item">
+              <div class="price__logo">
+                <img src="./assets/images/tesco.svg" alt="logo" />
+              </div>
+              <p class="list__text price__name">Tesco</p>
+              <p class="list__text price__value">$113</p>
+              <div class="price__icon">
+                <img
+                  src="./assets/images/green-arrow.svg"
+                  alt="red arrow image"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer Nav -->
+        <div class="footer__nav">
+          <a href="#" class="btn btn-primary footer__nav-btn">Trade</a>
+
+          <nav class="nav">
+            <a href="#" class="nav__item active">
+              <div class="nav__item-inner">
+                <img
+                  class="nav__icon"
+                  src="./assets/images/nav-market.svg"
+                  alt="nav icon"
+                />
+                <p class="nav__text">Market</p>
+              </div>
+            </a>
+            <a href="#" class="nav__item">
+              <div class="nav__item-inner">
+                <img
+                  class="nav__icon"
+                  src="./assets/images/nav-portfolio.svg"
+                  alt="nav icon"
+                />
+                <p class="nav__text">Portfolio</p>
+              </div>
+            </a>
+            <a href="#" class="nav__item">
+              <div class="nav__item-inner">
+                <img
+                  class="nav__icon"
+                  src="./assets/images/nav-news.svg"
+                  alt="nav icon"
+                />
+                <p class="nav__text">News</p>
+                <div class="nav__notification with-red-circle">
+                  <span>3</span>
+                </div>
+              </div>
+            </a>
+          </nav>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile__menu-wrapper">
+          <div class="mobile__menu">
+            <ul class="mobile__menu-list">
+              <li class="mobile__menu-list--item">
+                <button class="mobile__menu-close">
+                  <img
+                    src="./assets/images/menu-close.svg"
+                    alt="close menu icon"
+                  />
+                </button>
+              </li>
+              <li class="mobile__menu-list--item">
+                <a href="#" class="mobile__menu-link">Team</a>
+              </li>
+              <li class="mobile__menu-list--item">
+                <a href="#" class="mobile__menu-link">How to play</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile__overlay"></div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const burgerBtn = document.querySelector(".burger__btn");
+      const mobileMenuWrapper = document.querySelector(".mobile__menu-wrapper");
+      const closeBtn = document.querySelector(".mobile__menu-close");
+      const overlay = document.querySelector(".mobile__overlay");
+
+      function openMenu() {
+        mobileMenuWrapper.style.visibility = "visible";
+        mobileMenuWrapper.classList.add("open");
+        document.body.classList.add("menu-open");
+      }
+
+      function closeMenu() {
+        mobileMenuWrapper.classList.remove("open");
+        setTimeout(() => {
+          if (!mobileMenuWrapper.classList.contains("open")) {
+            mobileMenuWrapper.style.visibility = "hidden";
+          }
+        }, 300);
+        document.body.classList.remove("menu-open");
+      }
+
+      burgerBtn.addEventListener("click", openMenu);
+
+      closeBtn.addEventListener("click", closeMenu);
+
+      overlay.addEventListener("click", closeMenu);
+
+      const menuLinks = document.querySelectorAll(".mobile__menu-link");
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", closeMenu);
+      });
+    </script>
+  </body>
+</html>
