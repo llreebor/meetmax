@@ -35,7 +35,7 @@
           </button>
         </header>
         <!-- Content -->
-        <div class="price">
+        <div class="price pb-200">
           <div class="section__title">Current Prices</div>
           <ul class="list price__list">
             <li class="list__item price__item">
@@ -147,7 +147,12 @@
           </nav>
         </div>
 
-        <!-- Mobile Menu -->
+        <!--
+            Mobile menu:
+            - For opening: JS adds 'open' to .mobile__menu-wrapper and 'menu-open' to body.
+            - Trigger: <button class="burger__btn">☰</button> (add outside the menu, handle click in JS).
+            - Closing: click on .mobile__menu-close or .mobile__overlay.
+        -->
         <div class="mobile__menu-wrapper">
           <div class="mobile__menu">
             <ul class="mobile__menu-list">
@@ -171,39 +176,5 @@
         </div>
       </div>
     </main>
-
-    <script>
-      const burgerBtn = document.querySelector(".burger__btn");
-      const mobileMenuWrapper = document.querySelector(".mobile__menu-wrapper");
-      const closeBtn = document.querySelector(".mobile__menu-close");
-      const overlay = document.querySelector(".mobile__overlay");
-
-      function openMenu() {
-        mobileMenuWrapper.style.visibility = "visible";
-        mobileMenuWrapper.classList.add("open");
-        document.body.classList.add("menu-open");
-      }
-
-      function closeMenu() {
-        mobileMenuWrapper.classList.remove("open");
-        setTimeout(() => {
-          if (!mobileMenuWrapper.classList.contains("open")) {
-            mobileMenuWrapper.style.visibility = "hidden";
-          }
-        }, 300);
-        document.body.classList.remove("menu-open");
-      }
-
-      burgerBtn.addEventListener("click", openMenu);
-
-      closeBtn.addEventListener("click", closeMenu);
-
-      overlay.addEventListener("click", closeMenu);
-
-      const menuLinks = document.querySelectorAll(".mobile__menu-link");
-      menuLinks.forEach((link) => {
-        link.addEventListener("click", closeMenu);
-      });
-    </script>
   </body>
 </html>

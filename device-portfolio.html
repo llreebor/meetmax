@@ -1,137 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>MeetMax</title>
-		<!-- Font -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap"
-			rel="stylesheet"
-		/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeetMax</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-		<!-- Styles -->
-		<link rel="stylesheet" href="./assets/css/mobile.css" />
-	</head>
-	<body>
-		<main>
-			<div class="wrapper">
-				<!-- Actions Bar -->
-				<div class="actions">
-					<a href="#" class="action__btn">
-						<img src="./assets/images/info-icon.svg" alt="icon" />
-					</a>
-					<div class="timer">
-						<img src="./assets/images/clock.svg" alt="clock icon" />
-						<p class="time">13:20</p>
-					</div>
-					<a href="#" class="action__btn">
-						<img src="./assets/images/members-icon.svg" alt="icon" />
-					</a>
-				</div>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/mobile.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="wrapper">
+        <!-- Back Button -->
+        <header class="header">
+          <div class="time">
+            <img src="./assets/images/clockicon.svg" alt="clockicon" />
+            <p>12:34</p>
+          </div>
 
-				<!-- Content -->
-				<div class="content">
-					<a href="#" class="btn text-sm">< Back</a>
+          <div class="balance">
+            <p class="balance__total">$1,277,000</p>
+            <p class="balance__cash">Cash <span>$60</span></p>
+          </div>
 
-					<div class="content__item">
-						<h2 class="content__subtitle">Team Portfolio</h2>
+          <button class="burger__btn">
+            <img src="./assets/images/menu-open.svg" alt="menu open button" />
+          </button>
+        </header>
 
-						<div class="table__wrapper">
-							<table class="table">
-								<thead>
-									<tr>
-										<td class="table__head" style="width: 100%">Share</td>
-										<td class="table__head" style="width: 50px">#</td>
-										<td class="table__head" style="width: 50px">Price</td>
-										<td class="table__head" style="width: 50px">Value</td>
-									</tr>
-								</thead>
-								<tbody>
-									<tr class="table__row">
-										<td class="table__cell">Apple</td>
-										<td class="table__cell" style="width: 50px">20</td>
-										<td class="table__cell" style="width: 50px">$15</td>
-										<td class="table__cell" style="width: 50px">$300</td>
-									</tr>
-									<tr class="table__row">
-										<td class="table__cell">IBM</td>
-										<td class="table__cell" style="width: 50px">2</td>
-										<td class="table__cell" style="width: 50px">$213</td>
-										<td class="table__cell" style="width: 50px">$426</td>
-									</tr>
-									<tr class="table__row">
-										<td class="table__cell">Tesco</td>
-										<td class="table__cell" style="width: 50px">(1)</td>
-										<td class="table__cell" style="width: 50px">$14</td>
-										<td class="table__cell" style="width: 50px">($14)</td>
-									</tr>
-									<tr class="table__row">
-										<td class="table__cell">Asda</td>
-										<td class="table__cell" style="width: 50px">0</td>
-										<td class="table__cell" style="width: 50px">$67</td>
-										<td class="table__cell" style="width: 50px">$0</td>
-									</tr>
-									<tr class="table__row">
-										<td class="table__cell">Microsoft</td>
-										<td class="table__cell" style="width: 50px">101</td>
-										<td class="table__cell" style="width: 50px">$5</td>
-										<td class="table__cell" style="width: 50px">$505</td>
-									</tr>
+        <!-- Content -->
+        <div class="price overflow-hidden pb-200">
+          <div class="section__title">Your team’s Portfolio</div>
 
-									<tr class="table__row">
-										<td class="table__cell cash__cell">
-											<strong>CASH</strong>
-										</td>
-										<td class="table__cell cash__cell" style="width: 50px"></td>
-										<td class="table__cell cash__cell" style="width: 50px"></td>
-										<td class="table__cell cash__cell" style="width: 50px">
-											$60
-										</td>
-									</tr>
-								</tbody>
-							</table>
-							<div class="table__total">
-								<p class="table__total-text">TOTAL</p>
-								<p class="table__total-value">$1,277</p>
-							</div>
-						</div>
-					</div>
+          <div class="table-wrapper" style="overflow-x: auto">
+            <table style="min-width: 400px">
+              <thead>
+                <tr>
+                  <th class="text-left">Share Price</th>
+                  <th class="text-center">Units</th>
+                  <th class="text-right">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-left">
+                    <div class="price__cell">
+                      <div class="price__cell-icon">
+                        <img src="./assets/images/apple.svg" alt="icon" />
+                      </div>
+                      <div class="price__cell-info">
+                        <div class="price__cell-name">Apple</div>
+                        <div class="price__cell-price">$32</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="text-center">
+                    <div class="units__cell">800</div>
+                  </td>
+                  <td class="text-right">
+                    <div class="value__cell text-green">$320</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-left">
+                    <div class="price__cell">
+                      <div class="price__cell-icon">
+                        <img src="./assets/images/asda.svg" alt="icon" />
+                      </div>
+                      <div class="price__cell-info">
+                        <div class="price__cell-name">ASDA</div>
+                        <div class="price__cell-price">$14</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="text-center">
+                    <div class="units__cell">1,000</div>
+                  </td>
+                  <td class="text-right">
+                    <div class="value__cell text-green">$14,000</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-left">
+                    <div class="price__cell">
+                      <div class="price__cell-icon">
+                        <img src="./assets/images/ibm.svg" alt="icon" />
+                      </div>
+                      <div class="price__cell-info">
+                        <div class="price__cell-name">IBM</div>
+                        <div class="price__cell-price">$32</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="text-center">
+                    <div class="units__cell">-87</div>
+                  </td>
+                  <td class="text-right">
+                    <div class="value__cell text-red">($843)</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-left">
+                    <div class="price__cell">
+                      <div class="price__cell-icon">
+                        <img src="./assets/images/apple.svg" alt="icon" />
+                      </div>
+                      <div class="price__cell-info">
+                        <div class="price__cell-name">Apple</div>
+                        <div class="price__cell-price">$32</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="text-center">
+                    <div class="units__cell">800</div>
+                  </td>
+                  <td class="text-right">
+                    <div class="value__cell text-green">$320</div>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td class="footer__cell text-left">Cash</td>
+                  <td></td>
+                  <td class="footer__cell text-right text-green">$430</td>
+                </tr>
+                <tr>
+                  <td class="footer__cell text-left">TOTAL</td>
+                  <td></td>
+                  <td class="footer__cell text-right">$10,490</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
 
-					<div class="content__item">
-						<h2 class="content__subtitle">Team Trades</h2>
+          <div class="price">
+            <div class="section__title">Team’s latest Trades</div>
+            <ul class="list price__list">
+              <li class="list__item price__item">
+                <div class="price__logo">
+                  <img src="./assets/images/apple.svg" alt="logo" />
+                </div>
+                <div class="price__order">
+                  <p class="list__text price__name">Apple</p>
+                  <p class="list__text price__value">
+                    <span class="text-cyan">Buy</span>
+                    10 @ $100
+                  </p>
+                </div>
+              </li>
+              <li class="list__item price__item">
+                <div class="price__logo">
+                  <img src="./assets/images/ibm.svg" alt="logo" />
+                </div>
+                <div class="price__order">
+                  <p class="list__text price__name">IBM</p>
+                  <p class="list__text price__value">
+                    <span class="text-orange">Sell</span>
+                    10 @ $250
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-						<ul class="list trades__list">
-							<li class="list__item trades__item">
-								<p class="list__text">5</p>
-								<p class="list__text">IBM</p>
-								<p class="list__text">@</p>
-								<p class="list__text">$213</p>
-							</li>
-							<li class="list__item trades__item">
-								<p class="list__text">5</p>
-								<p class="list__text">IBM</p>
-								<p class="list__text">@</p>
-								<p class="list__text">$213</p>
-							</li>
-							<li class="list__item trades__item">
-								<p class="list__text">5</p>
-								<p class="list__text">IBM</p>
-								<p class="list__text">@</p>
-								<p class="list__text">$213</p>
-							</li>
-							<li class="list__item trades__item">
-								<p class="list__text">5</p>
-								<p class="list__text">IBM</p>
-								<p class="list__text">@</p>
-								<p class="list__text">$213</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</main>
-	</body>
+        <!-- Footer Nav -->
+        <div class="footer__nav">
+          <a href="#" class="btn btn-primary footer__nav-btn">Trade</a>
+
+          <nav class="nav">
+            <a href="#" class="nav__item">
+              <div class="nav__item-inner">
+                <img
+                  class="nav__icon"
+                  src="./assets/images/nav-market.svg"
+                  alt="nav icon"
+                />
+                <p class="nav__text">Market</p>
+              </div>
+            </a>
+            <a href="#" class="nav__item active">
+              <div class="nav__item-inner">
+                <img
+                  class="nav__icon"
+                  src="./assets/images/nav-portfolio.svg"
+                  alt="nav icon"
+                />
+                <p class="nav__text">Portfolio</p>
+              </div>
+            </a>
+            <a href="#" class="nav__item">
+              <div class="nav__item-inner">
+                <img
+                  class="nav__icon"
+                  src="./assets/images/nav-news.svg"
+                  alt="nav icon"
+                />
+                <p class="nav__text">News</p>
+                <div class="nav__notification with-red-circle">
+                  <span>3</span>
+                </div>
+              </div>
+            </a>
+          </nav>
+        </div>
+
+        <!--
+            Mobile menu:
+            - For opening: JS adds 'open' to .mobile__menu-wrapper and 'menu-open' to body.
+            - Trigger: <button class="burger__btn">☰</button> (add outside the menu, handle click in JS).
+            - Closing: click on .mobile__menu-close or .mobile__overlay.
+        -->
+        <div class="mobile__menu-wrapper">
+          <div class="mobile__menu">
+            <ul class="mobile__menu-list">
+              <li class="mobile__menu-list--item">
+                <button class="mobile__menu-close">
+                  <img
+                    src="./assets/images/menu-close.svg"
+                    alt="close menu icon"
+                  />
+                </button>
+              </li>
+              <li class="mobile__menu-list--item">
+                <a href="#" class="mobile__menu-link">Team</a>
+              </li>
+              <li class="mobile__menu-list--item">
+                <a href="#" class="mobile__menu-link">How to play</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile__overlay"></div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
