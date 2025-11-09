@@ -36,10 +36,86 @@
         </header>
 
         <!-- Content -->
-        <div class="price overflow-hidden pb-200">
-          <div class="section__title">Your team’s Portfolio</div>
+        <div class="price overflow-hidden space-y-8">
+          <div class="price">
+            <div class="section__title">Current Scores</div>
+            <ul class="list price__list score__list">
+              <li class="list__item price__item score__item">
+                <p class="score__name">
+                  <span class="bg-grey">1</span>
+                  Trade Titans
+                </p>
+                <p class="score__sum">$10,490</p>
+              </li>
+              <li class="list__item price__item score__item">
+                <p class="score__name">
+                  <span class="bg-orange">2</span>
+                  Profit Pioneers
+                </p>
+                <p class="score__sum">$10,490</p>
+              </li>
+              <li class="list__item price__item score__item">
+                <p class="score__name">
+                  <span class="bg-cyan">3</span>
+                  Share Bears
+                </p>
+                <p class="score__sum">$10,490</p>
+              </li>
+              <li class="list__item price__item score__item">
+                <p class="score__name">
+                  <span class="bg-green">4</span>
+                  Team Name
+                </p>
+                <p class="score__sum">$10,490</p>
+              </li>
+              <li class="list__item price__item score__item">
+                <p class="score__name">
+                  <span class="bg-violet">5</span>
+                  Fiscal Foxes
+                </p>
+                <p class="score__sum">$10,490</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="price">
+            <div class="section__title">Risk and Return</div>
+            <ul class="list price__list score__list">
+              <li class="list__item price__item score__item">
+                <p class="score__name">
+                  <span class="bg-green">1</span>
+                  Market Mavericks
+                </p>
+                <div class="score__info">
+                  <p class="score__rating rating-yellow">2.3</p>
+                  <p class="score__sum">-800%</p>
+                </div>
+              </li>
+              <li class="list__item price__item score__item">
+                <p class="score__name">
+                  <img src="./assets/images/greek-temple.svg" alt="icon" />
+                  Market
+                </p>
+                <div class="score__info">
+                  <p class="score__rating rating-green">1.0</p>
+                  <p class="score__sum">2%</p>
+                </div>
+              </li>
+              <li class="list__item price__item score__item">
+                <p class="score__name">
+                  <span class="bg-orange">1</span>
+                  Profit Pioneers
+                </p>
+                <div class="score__info">
+                  <p class="score__rating rating-red">3.3</p>
+                  <p class="score__sum">25%</p>
+                </div>
+              </li>
+            </ul>
+          </div>
 
           <div class="table-wrapper" style="overflow-x: auto">
+            <div class="section__title">Your team’s Portfolio</div>
             <table style="min-width: 320px">
               <thead>
                 <tr>
@@ -140,77 +216,6 @@
               </tfoot>
             </table>
           </div>
-
-          <div class="price">
-            <div class="section__title">Team’s latest Trades</div>
-            <ul class="list price__list">
-              <li class="list__item price__item">
-                <div class="price__logo">
-                  <img src="./assets/images/apple.svg" alt="logo" />
-                </div>
-                <div class="price__order">
-                  <p class="list__text price__name">Apple</p>
-                  <p class="list__text price__value">
-                    <span class="text-cyan">Buy</span>
-                    10 @ $100
-                  </p>
-                </div>
-              </li>
-              <li class="list__item price__item">
-                <div class="price__logo">
-                  <img src="./assets/images/ibm.svg" alt="logo" />
-                </div>
-                <div class="price__order">
-                  <p class="list__text price__name">IBM</p>
-                  <p class="list__text price__value">
-                    <span class="text-orange">Sell</span>
-                    10 @ $250
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Footer Nav -->
-        <div class="footer__nav">
-          <a href="#" class="btn btn-primary footer__nav-btn">Trade</a>
-
-          <nav class="nav">
-            <a href="#" class="nav__item">
-              <div class="nav__item-inner">
-                <img
-                  class="nav__icon"
-                  src="./assets/images/nav-market.svg"
-                  alt="nav icon"
-                />
-                <p class="nav__text">Market</p>
-              </div>
-            </a>
-            <a href="#" class="nav__item active">
-              <div class="nav__item-inner">
-                <img
-                  class="nav__icon"
-                  src="./assets/images/nav-portfolio.svg"
-                  alt="nav icon"
-                />
-                <p class="nav__text">Portfolio</p>
-              </div>
-            </a>
-            <a href="#" class="nav__item">
-              <div class="nav__item-inner">
-                <img
-                  class="nav__icon"
-                  src="./assets/images/nav-news.svg"
-                  alt="nav icon"
-                />
-                <p class="nav__text">News</p>
-                <div class="nav__notification with-red-circle">
-                  <span>3</span>
-                </div>
-              </div>
-            </a>
-          </nav>
         </div>
 
         <!--

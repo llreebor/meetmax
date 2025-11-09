@@ -101,8 +101,13 @@ a {
 .pb-200 {
   padding-bottom: 200px;
 }
+.space-y-8 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
 .wrapper {
-  max-width: 800px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -376,6 +381,7 @@ body.menu-open {
 .price__order .price__name {
   margin-left: 0;
 }
+
 /* Back Block */
 .back {
   padding: 24px;
@@ -395,6 +401,27 @@ body.menu-open {
   text-align: center;
   width: 100%;
   margin-left: -40px;
+}
+
+/* Black List */
+.black__list {
+  width: 100%;
+}
+.black__list-item {
+  padding: 10px;
+  background: #0c0c0c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 2px;
+}
+.black__list-text {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* Inner */
@@ -644,6 +671,9 @@ body.menu-open {
 .team__btn {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
   position: fixed;
   bottom: 40px;
   left: 50%;
@@ -757,9 +787,7 @@ td {
   margin-top: 44px;
 }
 
-/* News */
-.news__list {
-}
+/* News + */
 .news__list-item {
   padding: 12px 16px;
   border-top: 1px solid #5b5b5b;
@@ -816,6 +844,87 @@ td {
   border: 2px solid #00a886;
   text-decoration: none;
   max-width: fit-content;
+}
+
+/* Trade */
+.trade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+.trade__text {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+/* Score */
+.score__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.score__name {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  span {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2px;
+  }
+}
+.score__info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  .score__sum {
+    width: 64px;
+    text-align: right;
+  }
+}
+.score__sum {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.score__rating {
+  padding: 6px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: white;
+  &.rating-green {
+    background: #2b6821;
+  }
+  &.rating-red {
+    background: #c00f0c;
+  }
+  &.rating-yellow {
+    background: #e8b931;
+    color: #212121;
+  }
 }
 
 /* Switch */
