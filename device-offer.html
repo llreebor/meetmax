@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeetMax</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/mobile.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="wrapper">
+        <!-- Back Button -->
+        <div class="back">
+          <a href="#">
+            <img
+              class="back__icon"
+              src="./assets/images/back-icon.svg"
+              alt="back icon"
+            />
+          </a>
+          <p class="back__text">Set Offer</p>
+        </div>
+
+        <!-- Content -->
+        <div class="offer">
+          <label class="switch">
+            <input type="checkbox" id="toggleSwitch" />
+            <div class="switch-label">
+              <span>Sell</span>
+              <span>Buy</span>
+              <div class="switch-slider"></div>
+            </div>
+          </label>
+
+          <div class="offer__form">
+            <div class="select">
+              <p class="select__label">Stock</p>
+
+              <!-- Add the class "selected" to .select__wrapper to hide the placeholder and show the selected content. -->
+              <div class="select__wrapper">
+                <input type="hidden" id="select-value" name="select-value" />
+                <button class="select__input">
+                  <!-- Placeholder -->
+                  <p class="select__placeholder">Choose a stock</p>
+                  <img
+                    class="select_arrow"
+                    src="./assets/images/selectr-arrow.svg"
+                    alt="select arrow"
+                  />
+                  <!-- Selected Content. Hidden by default. -->
+                  <div class="select__selected">
+                    <div class="select__option selected">
+                      <img
+                        class="select__option-icon"
+                        src="./assets/images/apple.svg"
+                        alt="icon"
+                      />
+                      <p class="select__option-text">Apple</p>
+                      <p class="select__option-value">$100</p>
+                    </div>
+                  </div>
+                </button>
+
+                <!-- Select options list. -->
+                <div class="select__content">
+                  <button class="select__option">
+                    <img
+                      class="select__option-icon"
+                      src="./assets/images/apple.svg"
+                      alt="icon"
+                    />
+                    <p class="select__option-text">Apple</p>
+                    <p class="select__option-value">$100</p>
+                  </button>
+                  <button class="select__option">
+                    <img
+                      class="select__option-icon"
+                      src="./assets/images/apple.svg"
+                      alt="icon"
+                    />
+                    <p class="select__option-text">Apple</p>
+                    <p class="select__option-value">$100</p>
+                  </button>
+                  <button class="select__option">
+                    <img
+                      class="select__option-icon"
+                      src="./assets/images/apple.svg"
+                      alt="icon"
+                    />
+                    <p class="select__option-text">Apple</p>
+                    <p class="select__option-value">$100</p>
+                  </button>
+                  <button class="select__option">
+                    <img
+                      class="select__option-icon"
+                      src="./assets/images/apple.svg"
+                      alt="icon"
+                    />
+                    <p class="select__option-text">Apple</p>
+                    <p class="select__option-value">$100</p>
+                  </button>
+                  <button class="select__option">
+                    <img
+                      class="select__option-icon"
+                      src="./assets/images/apple.svg"
+                      alt="icon"
+                    />
+                    <p class="select__option-text">Apple</p>
+                    <p class="select__option-value">$100</p>
+                  </button>
+                  <button class="select__option">
+                    <img
+                      class="select__option-icon"
+                      src="./assets/images/apple.svg"
+                      alt="icon"
+                    />
+                    <p class="select__option-text">Apple</p>
+                    <p class="select__option-value">$100</p>
+                  </button>
+                  <button class="select__option">
+                    <img
+                      class="select__option-icon"
+                      src="./assets/images/apple.svg"
+                      alt="icon"
+                    />
+                    <p class="select__option-text">Apple</p>
+                    <p class="select__option-value">$100</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="offer__btn">
+            <!-- If it is a button, just use the disabled attribute. The styles will be the same.-->
+            <a href="#" class="btn btn-secondary btn-disabled">Continue</a>
+            <!-- <button disabled class="btn btn-secondary">Continue</button> -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
