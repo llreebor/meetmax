@@ -48,7 +48,7 @@
               <!-- Add the class "selected" to .select__wrapper to hide the placeholder and show the selected content. -->
               <div class="select__wrapper">
                 <input type="hidden" id="select-value" name="select-value" />
-                <button class="select__input">
+                <button type="button" class="select__input">
                   <!-- Placeholder -->
                   <p class="select__placeholder">Choose a stock</p>
                   <img
@@ -72,7 +72,7 @@
 
                 <!-- Select options list. -->
                 <div class="select__content">
-                  <button class="select__option">
+                  <button type="button" class="select__option">
                     <img
                       class="select__option-icon"
                       src="./assets/images/apple.svg"
@@ -81,7 +81,7 @@
                     <p class="select__option-text">Apple</p>
                     <p class="select__option-value">$100</p>
                   </button>
-                  <button class="select__option">
+                  <button type="button" class="select__option">
                     <img
                       class="select__option-icon"
                       src="./assets/images/apple.svg"
@@ -90,7 +90,7 @@
                     <p class="select__option-text">Apple</p>
                     <p class="select__option-value">$100</p>
                   </button>
-                  <button class="select__option">
+                  <button type="button" class="select__option">
                     <img
                       class="select__option-icon"
                       src="./assets/images/apple.svg"
@@ -99,7 +99,7 @@
                     <p class="select__option-text">Apple</p>
                     <p class="select__option-value">$100</p>
                   </button>
-                  <button class="select__option">
+                  <button type="button" class="select__option">
                     <img
                       class="select__option-icon"
                       src="./assets/images/apple.svg"
@@ -108,7 +108,7 @@
                     <p class="select__option-text">Apple</p>
                     <p class="select__option-value">$100</p>
                   </button>
-                  <button class="select__option">
+                  <button type="button" class="select__option">
                     <img
                       class="select__option-icon"
                       src="./assets/images/apple.svg"
@@ -117,7 +117,7 @@
                     <p class="select__option-text">Apple</p>
                     <p class="select__option-value">$100</p>
                   </button>
-                  <button class="select__option">
+                  <button type="button" class="select__option">
                     <img
                       class="select__option-icon"
                       src="./assets/images/apple.svg"
@@ -126,7 +126,7 @@
                     <p class="select__option-text">Apple</p>
                     <p class="select__option-value">$100</p>
                   </button>
-                  <button class="select__option">
+                  <button type="button" class="select__option">
                     <img
                       class="select__option-icon"
                       src="./assets/images/apple.svg"
@@ -138,12 +138,47 @@
                 </div>
               </div>
             </div>
+
+            <div class="offer__inputs">
+              <!-- If input invalid add 'invalid' class to the input__group. 
+               This will automatically display the error message and apply red border via existing CSS. -->
+              <div class="input__group invalid">
+                <label class="label" for="quantity"> Quantity </label>
+                <input
+                  class="input"
+                  type="text"
+                  name="quantity"
+                  id="quantity"
+                  placeholder="0"
+                />
+                <p class="error__message">Too many shares</p>
+              </div>
+              <div class="input__group">
+                <label class="label" for="price"> Share price </label>
+                <input
+                  class="input"
+                  type="text"
+                  name="price"
+                  id="price"
+                  placeholder="0"
+                />
+                <p class="error__message">Price is too low</p>
+                <span>$</span>
+              </div>
+            </div>
+
+            <ul class="black__list">
+              <li class="black__list-item">
+                <p class="black__list-text"><b>Total Value</b></p>
+                <p class="black__list-text">$0</p>
+              </li>
+            </ul>
           </div>
 
           <div class="offer__btn">
             <!-- If it is a button, just use the disabled attribute. The styles will be the same.-->
-            <a href="#" class="btn btn-secondary btn-disabled">Continue</a>
-            <!-- <button disabled class="btn btn-secondary">Continue</button> -->
+            <a href="#" class="btn btn-primary btn-disabled">Confirm Offer</a>
+            <!-- <button disabled class="btn btn-primary">Confirm Offer</button> -->
           </div>
         </div>
       </div>

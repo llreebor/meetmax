@@ -133,6 +133,7 @@ button {
   justify-content: center;
   align-items: center;
   max-width: fit-content;
+  flex-shrink: 0;
 }
 .btn-primary {
   color: white;
@@ -523,7 +524,8 @@ body.menu-open {
 /* ========================= Styles ==================================== */
 /* Hero + */
 .home {
-  background: url("../images/central-title-bg.png") center/cover no-repeat;
+  background: url("../images/central-title-bg.png") center / cover no-repeat;
+  min-height: 100dvh;
 }
 .hero {
   display: flex;
@@ -954,9 +956,71 @@ td {
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
+  width: 100%;
 }
 .offer__form {
   width: 100%;
+}
+.offer__inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.input__group {
+  position: relative;
+  &.invalid {
+    .error__message {
+      display: block;
+    }
+    .input {
+      border-color: #ff4340;
+    }
+  }
+
+  span {
+    position: absolute;
+    left: 10px;
+    top: 42px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #b3b3b3;
+    display: block;
+  }
+}
+.input {
+  border-radius: 2px;
+  border: 1px solid #5b5b5b;
+  padding: 10px;
+  text-align: right;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #f3f3f3;
+  text-align: right;
+  padding-left: 24px;
+}
+.label {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 4px;
+  display: block;
+}
+.error__message {
+  margin-top: 4px;
+  color: #ff4340;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: none;
 }
 .select__wrapper {
   position: relative;
@@ -972,7 +1036,6 @@ td {
     }
   }
 }
-
 .select__label {
   color: #fff;
   font-size: 20px;
@@ -1044,6 +1107,7 @@ td {
   line-height: 24px;
   margin-left: 16px;
 }
+
 .switch {
   display: inline-flex;
   align-items: center;
