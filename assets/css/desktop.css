@@ -240,10 +240,10 @@ p {
 }
 .merket__logo {
   @media (width <= 1450px) {
-    width: 350px;
+    width: 400px;
   }
   @media (height <= 900px) {
-    width: 350px;
+    width: 400px;
   }
 }
 .qr__big {
