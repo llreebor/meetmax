@@ -532,6 +532,9 @@ p {
     @media (width <= 1450px) {
       height: 80px;
     }
+    @media (height <= 900px) {
+      height: 80px;
+    }
   }
 
   &.price__item-market {
