@@ -240,11 +240,11 @@ p {
 }
 .merket__logo {
   @media (width <= 1450px) {
-    width: 420px;
+    width: 440px;
   }
-  /* @media (height <= 900px) {
-    width: 400px;
-  } */
+  @media (height <= 900px) {
+    width: 440px;
+  }
 }
 .qr__big {
   display: flex;
@@ -260,9 +260,9 @@ p {
   @media (width <= 1450px) {
     width: 340px;
   }
-  /* @media (height <= 900px) {
-    width: 300px;
-  } */
+  @media (height <= 900px) {
+    width: 340px;
+  }
 }
 .qr__text {
   font-size: 36px;
