@@ -654,6 +654,12 @@ body.menu-open {
   display: flex;
   align-items: center;
   justify-content: center;
+  &.team__list-item-green {
+    color: #309e1e;
+  }
+  &.team__list-item-red {
+    color: #e92508;
+  }
 }
 .team__list-item-text {
   font-size: 20px;
@@ -679,6 +685,12 @@ body.menu-open {
   font-weight: 700;
   font-size: 32px;
   padding-top: 5px;
+  &.team__title-num--green {
+    background: #309e1e;
+  }
+  &.team__title-num--red {
+    background: #e92508;
+  }
 }
 .team__btn {
   display: flex;

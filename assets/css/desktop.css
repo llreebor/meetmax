@@ -240,11 +240,11 @@ p {
 }
 .merket__logo {
   @media (width <= 1450px) {
-    width: 400px;
+    width: 500px;
   }
-  @media (height <= 900px) {
+  /* @media (height <= 900px) {
     width: 400px;
-  }
+  } */
 }
 .qr__big {
   display: flex;
@@ -258,11 +258,11 @@ p {
 }
 .qr__img {
   @media (width <= 1450px) {
-    width: 300px;
+    width: 400px;
   }
-  @media (height <= 900px) {
+  /* @media (height <= 900px) {
     width: 300px;
-  }
+  } */
 }
 .qr__text {
   font-size: 36px;
@@ -351,12 +351,37 @@ p {
     margin-top: 24px;
     gap: 40px;
   }
+}
+.inner__grid-stock {
+  display: flex;
+  width: 100%;
+  margin-top: 0;
+  gap: 0;
+  max-width: 100%;
+}
+.inner__item-side-left {
+  max-width: 504px;
+  width: 100%;
+  flex-shrink: 0;
+  @media (width <= 1450px) {
+    width: 350px;
+  }
+}
+.inner__item-center {
+  width: 100%;
 
-  &.inner__grid-stock {
+  img {
     max-width: 100%;
-    grid-template-columns: repeat(4, 1fr);
-    margin-top: 0;
-    gap: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+.inner__item-side-right {
+  max-width: 491px;
+  width: 100%;
+  flex-shrink: 0;
+  @media (width <= 1450px) {
+    width: 320px;
   }
 }
 .inner__item {
@@ -365,9 +390,6 @@ p {
   gap: 24px;
   @media (width <= 1450px) {
     gap: 16px;
-  }
-  &.inner__item-center {
-    grid-column: span 2;
   }
 }
 .inner__subtitle {
@@ -386,7 +408,10 @@ p {
 
   &.inner__subtitle-stock {
     font-size: 30px;
-    padding-top: 24px;
+    padding: 34px 0;
+    @media (width <= 1450px) {
+      padding: 20px 0;
+    }
   }
 }
 .inner__footer {
@@ -550,7 +575,7 @@ p {
   }
 
   &.price__item-market {
-    padding: 25px 0;
+    padding: 25px 16px;
     height: 110px;
     @media (width <= 1450px) {
       height: 80px;
@@ -644,6 +669,7 @@ p {
   margin: 0 auto;
   max-width: 1230px;
   margin-top: 30px;
+  justify-content: space-between;
 }
 .leaderboard__item-left {
   max-width: 600px;
@@ -660,6 +686,7 @@ p {
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 20px;
+  padding: 20px 0;
 }
 .legend__item {
   display: flex;
