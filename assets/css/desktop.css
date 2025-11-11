@@ -240,7 +240,7 @@ p {
 }
 .merket__logo {
   @media (width <= 1450px) {
-    width: 500px;
+    width: 460px;
   }
   /* @media (height <= 900px) {
     width: 400px;
@@ -258,7 +258,7 @@ p {
 }
 .qr__img {
   @media (width <= 1450px) {
-    width: 400px;
+    width: 340px;
   }
   /* @media (height <= 900px) {
     width: 300px;
