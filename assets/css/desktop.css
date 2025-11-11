@@ -364,7 +364,7 @@ p {
   width: 100%;
   flex-shrink: 0;
   @media (width <= 1600px) {
-    width: 350px;
+    max-width: 400px;
   }
 }
 .inner__item-center {
@@ -381,7 +381,7 @@ p {
   width: 100%;
   flex-shrink: 0;
   @media (width <= 1600px) {
-    width: 320px;
+    max-width: 360px;
   }
 }
 .inner__item {
