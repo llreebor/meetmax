@@ -529,8 +529,8 @@ p {
   align-items: center;
   justify-content: center;
   @media (width <= 1600px) {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
   }
 }
 .risk__num {
