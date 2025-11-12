@@ -504,7 +504,7 @@ p {
   line-height: 24px;
   border-bottom: 1px solid #5b5b5b;
   @media (width <= 1600px) {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 /* Team */
@@ -537,7 +537,7 @@ p {
   padding: 8px 4px 2px 2px;
   border-radius: 8px;
   @media (width <= 1600px) {
-    font-size: 36px;
+    font-size: 32px;
   }
   &.risk__num-green {
     background-color: #2b6821;
