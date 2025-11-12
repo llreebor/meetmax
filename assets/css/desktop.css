@@ -288,7 +288,7 @@ p {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   padding: 16px 96px;
-  @media (width <= 1450px) {
+  @media (width <= 1600px) {
     padding: 16px 40px;
   }
 }
@@ -299,7 +299,7 @@ p {
   flex: 1 1 100%;
   text-align: center;
   justify-self: center;
-  @media (width <= 1450px) {
+  @media (width <= 1600px) {
     font-size: 44px;
   }
   @media (height <= 900px) {
@@ -347,7 +347,7 @@ p {
   gap: 100px;
   margin: 0 auto;
   margin-top: 80px;
-  @media (width <= 1450px) {
+  @media (width <= 1600px) {
     margin-top: 24px;
     gap: 40px;
   }
@@ -364,7 +364,7 @@ p {
   width: 100%;
   flex-shrink: 0;
   @media (width <= 1600px) {
-    max-width: 400px;
+    max-width: 440px;
   }
 }
 .inner__item-center {
@@ -381,7 +381,7 @@ p {
   width: 100%;
   flex-shrink: 0;
   @media (width <= 1600px) {
-    max-width: 360px;
+    max-width: 400px;
   }
 }
 .inner__item {
@@ -559,14 +559,14 @@ p {
   border-radius: 0;
   padding: 25px 0;
   height: 110px;
-  @media (width <= 1450px) {
+  @media (width <= 1600px) {
     height: 80px;
   }
 
   &.price__item-stock {
     padding: 25px 16px;
     height: 110px;
-    @media (width <= 1450px) {
+    @media (width <= 1600px) {
       height: 80px;
     }
     @media (height <= 900px) {
@@ -577,7 +577,7 @@ p {
   &.price__item-market {
     padding: 25px 16px;
     height: 110px;
-    @media (width <= 1450px) {
+    @media (width <= 1600px) {
       height: 80px;
     }
     @media (height <= 900px) {
