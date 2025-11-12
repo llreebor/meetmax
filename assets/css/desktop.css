@@ -456,7 +456,7 @@ p {
   max-width: 700px;
   margin: 0 auto;
   margin-top: 60px;
-  @media (width <= 1450px) {
+  @media (width <= 1600px) {
     margin-top: 20px;
   }
 }
@@ -465,6 +465,9 @@ p {
   table-layout: auto;
   border-collapse: collapse;
   margin-top: 40px;
+  @media (width <= 1600px) {
+    margin-top: 20px;
+  }
   &.risk__table-without--header {
     margin-top: 20px;
   }
