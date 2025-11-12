@@ -121,6 +121,9 @@ button {
   display: flex;
   flex-direction: column;
   height: 100%;
+  &.with-image-bg {
+    background: url("../images/central-title-bg.png") center / cover no-repeat;
+  }
 }
 .btn {
   font-weight: 700;
